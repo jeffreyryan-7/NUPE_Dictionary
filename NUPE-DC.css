@@ -1,96 +1,99 @@
 *{
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
+    overflow-wrap: anywhere;
 }
 
-article, #preface, #signature, nav{
+body{
+    margin: 0;
     background-image: linear-gradient(to left, #4e2a8478, #4e2a8400);
 }
 
 h1{
-    font-size: 55px;
     text-align: center;
     color: #FFF;
-    padding: 40px;
-    margin: 0;
+    font-size: 2em;
     background-color: #4E2A84;
     width: 100%;
-    position: relative;
-    top: 0;
+    column-span: all;
+    padding: 0.6em;
+    margin: 0;
 }
 
 h2{
-    font-size: 32px;
-    margin: 0;
     color: #FFF;
     background-color: #4e2a84e4;
-    padding: 10px 5px 10px 20px;
-}
+    font-size: 1.5em;
+    padding: 0.3em 0.8em;
 
-#preface{
-    color: rgba(0, 0, 0, 0.87);
-    font-size: 24px;
-    text-align: center;
-    padding: 20px 0 6px;
-    margin: 0;
-    width: 100%;
-    letter-spacing: 0.2px;
 }
-
-#signature{
-    color: rgba(0, 0, 0, 0.87);
-    font-size: 24px;
-    text-align: center;
-    padding: 0 0 12px;
-    width: 100%;
-    margin: 0;
-}
-
 
 a{
     cursor: pointer;
+    z-index: 1;
+}
+
+.arrow{
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
+#preface,#signature{
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    margin: 5% 15%;
+}
+
+ol,ul{
+    padding: 0;
+    margin: 0;
 }
 
 nav{
     text-align: center;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
 }
 
 nav li{
-    color: #FFF;
+    color:#FFF;
+    font-size: 1.2em;
     background-color: #4e2a84eb;
-    padding: 5px 20px;
     border-radius: 5px;
-    display: inline;
-    font-size: 30px;
-    margin: 0px 15px;
+    display: inline-block;
+    padding: 0.4em 0.6em;
+    margin: 0.4em 0.6%;
+    box-shadow: 0 0.15em #301853eb;
+}
+
+nav li a:link, nav li a:visited{
+    color: #FFF;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav li a:active{
+    color: #FFF;
+    text-decoration: none;
+    display: inline-block;
+    transform: translateY(4px);
 }
 
 nav li:hover{
     background-color: #40226ca8;
 }
 
-nav li a:link, nav li a:visited{
-    color: #FFF;
-    text-decoration: none;
+ul{
+    list-style-type: none;
+    opacity: 0.8;
+    letter-spacing: 0.1px;
+    font-size: 0.8em;
+    margin:  1% 5% 5%;
 }
 
 li{
     font-family: Georgia;
-    font-size: 26px;
-    margin: 0 15px 15px 0;
-    max-width: 120ch;
-}
-
-ul{
-    list-style-type: none;
-    margin-left: 0; 
-    padding-left: 30px;
-    opacity: 0.8;
-    letter-spacing: 0.1px;
-    line-height: 1.4;
+    font-size: 1.2em;
+    margin: 0 0 4%;
 }
 
 name{
@@ -100,4 +103,33 @@ name{
 des{
     font-style: italic;
     font-weight: bold;
+}
+
+@media (min-width: 750px) {
+    h1{
+        font-size: 2.5em;
+    }
+
+    #preface,#signature{
+        color: rgba(0, 0, 0, 0.87);
+        text-align: center;
+        margin: 24px auto;
+    }
+
+    ul{
+        list-style-type: none;
+        opacity: 0.8;
+        letter-spacing: 0.1px;
+        font-size: 1em;
+        margin:  1% 30px 5%;
+    }
+
+    li{
+        font-family: Georgia;
+        font-size: 1.2em;
+        margin: 0 0 6px;
+    }
+    .arrow{
+        float: none;
+    }
 }
