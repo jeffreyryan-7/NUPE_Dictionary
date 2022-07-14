@@ -1,0 +1,103 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+article, #preface, #signature, nav{
+    background-image: linear-gradient(to left, #4e2a8478, #4e2a8400);
+}
+
+h1{
+    font-size: 55px;
+    text-align: center;
+    color: #FFF;
+    padding: 40px;
+    margin: 0;
+    background-color: #4E2A84;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+h2{
+    font-size: 32px;
+    margin: 0;
+    color: #FFF;
+    background-color: #4e2a84e4;
+    padding: 10px 5px 10px 20px;
+}
+
+#preface{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0 6px;
+    margin: 0;
+    width: 100%;
+    letter-spacing: 0.2px;
+}
+
+#signature{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    text-align: center;
+    padding: 0 0 12px;
+    width: 100%;
+    margin: 0;
+}
+
+
+a{
+    cursor: pointer;
+}
+
+nav{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+nav li{
+    color: #FFF;
+    background-color: #4e2a84eb;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline;
+    font-size: 30px;
+    margin: 0px 15px;
+}
+
+nav li:hover{
+    background-color: #40226ca8;
+}
+
+nav li a:link, nav li a:visited{
+    color: #FFF;
+    text-decoration: none;
+}
+
+li{
+    font-family: Georgia;
+    font-size: 26px;
+    margin: 0 15px 15px 0;
+    max-width: 120ch;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 0; 
+    padding-left: 30px;
+    opacity: 0.8;
+    letter-spacing: 0.1px;
+    line-height: 1.4;
+}
+
+name{
+    font-weight: bold;
+}
+
+des{
+    font-style: italic;
+    font-weight: bold;
+}
